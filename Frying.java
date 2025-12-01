@@ -10,4 +10,13 @@ public class Frying extends Recipe_Book
     public void getDetailsFrying()
     {
     }
+    public int fryTime(int i)
+    {
+        return i;
+    }
+    
+    public void oilType()
+    {
+        //change void to String
+    }
 }
