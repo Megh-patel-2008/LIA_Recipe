@@ -7,6 +7,7 @@ import java.util.ArrayList;
  */
 public class Recipe_Book
 {
+    ArrayList<String> Recipe = new ArrayList<String>();
     public void addRecipe()
     {
     }
