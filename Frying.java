@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Frying extends Recipe_Book
+public class Frying extends Recipe
 
 
 {

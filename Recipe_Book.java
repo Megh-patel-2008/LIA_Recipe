@@ -1,26 +1,18 @@
-import java.util.ArrayList;
+
 /**
- * Write a description of class Recipe_Book here.
+ * Write a description of class RecipeCollection here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
 public class Recipe_Book
 {
-    private String title = "My kitchen";
-    private ArrayList<String>ingredients = new ArrayList<>();
-    private ArrayList<String>steps = new ArrayList<>();
-    private int servings;
-    public Recipe_Book(int servings)
+    // instance variables - replace the example below with your own
+
+    /**
+     * Constructor for objects of class RecipeCollection
+     */
+    public Recipe_Book()
     {
-        this.servings = servings;
-    }
-    public void addIngredient(String ingredient)
-    {
-        ingredients.add(ingredient);
-    }
-    public void addSteps(String step)
-    {
-        steps.add(step);
     }
 }

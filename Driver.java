@@ -10,8 +10,6 @@ import java.awt.Choice;
 public class Driver
 {
     // instance variables - replace the example below with your own
-    int choice = 0;
-    private int Choice;
 
     /**
      * Constructor for objects of class Main
