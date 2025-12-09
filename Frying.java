@@ -8,9 +8,7 @@
 public class Frying extends Recipe_Book
 
 
-{ // change void with String
-
-             
+{             
     private String oilType;
     private int fryTime;
     private boolean isDeepFry;
