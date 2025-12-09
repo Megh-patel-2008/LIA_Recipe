@@ -7,14 +7,20 @@ import java.util.ArrayList;
  */
 public class Recipe_Book
 {
-    ArrayList<String> Recipe = new ArrayList<String>();
-    public void addRecipe()
+    private String title = "My kitchen";
+    private ArrayList<String>ingredients = new ArrayList<>();
+    private ArrayList<String>steps = new ArrayList<>();
+    private int servings;
+    public Recipe_Book(int servings)
     {
+        this.servings = servings;
     }
-    public void listAll()
+    public void addIngredient(String ingredient)
     {
+        ingredients.add(ingredient);
     }
-    public void listByAll()
+    public void addSteps(String step)
     {
+        steps.add(step);
     }
 }

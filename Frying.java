@@ -7,25 +7,14 @@
  */
 public class Frying extends Recipe_Book
 
-{ // change void with String
-    public void getDetailsFrying()
-    {
-        
+{
+    private String oilType;
+    private int fryTime;
+    private boolean isDeepFry;
+    public Frying(int servings, String oilType, int fryTime, boolean isDeepFry) {
+        super(servings); // FIX: passes required argument to Recipe_Book
+        this.oilType = oilType;
+        this.fryTime = fryTime;
+        this.isDeepFry = isDeepFry;
     }
-    
-    public int fryTime(int i)
-    {
-        return i;
-    }
-    
-    public void oilType()
-    {
-        //change void to String
-    }
-    
-    public void DeepFryOrPanFry()
-    {
-        //change void to boolean
-    }
-
 }
