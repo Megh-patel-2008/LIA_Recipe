@@ -8,7 +8,7 @@
 public class Frying extends Recipe_Book
 
 
-{ // change void with String
+{ 
 
              
     private String oilType;
@@ -18,6 +18,25 @@ public class Frying extends Recipe_Book
         super(servings);
         this.oilType = oilType;
         this.fryTime = fryTime;
+        this.isDeepFry = isDeepFry;
+    }
+    public String getOilType(){
+        return oilType;
+    }
+    public void setOilType(String oilType){
+        this.oilType = oilType;
+    }
+    
+    public int getFryTime(){
+        return fryTime;
+    }
+    public void setFryTime(int fryTime){
+        this.fryTime = fryTime;
+    }
+    public boolean isDeepFry(){
+        return isDeepFry;
+    }
+    public void setDeepFry(boolean isDeepFry){
         this.isDeepFry = isDeepFry;
     }
 }
