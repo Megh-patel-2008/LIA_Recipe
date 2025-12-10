@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class Recipe
 {
-    private String title = "My kitchen";
+    private String title = "Your Home Kitchen";
     private ArrayList<String>ingredients = new ArrayList<>();
     private ArrayList<String>steps = new ArrayList<>();
     private int servings;
@@ -22,5 +22,21 @@ public class Recipe
     public void addSteps(String step)
     {
         steps.add(step);
+    }
+    public String getTitle()
+    {
+        return title;
+    }
+    public int getServings()
+    {
+        return servings;
+    }
+    public ArrayList<String> getIngredients()
+    {
+        return ingredients;
+    }
+    public ArrayList<String> getSteps()
+    {
+        return steps;
     }
 }
