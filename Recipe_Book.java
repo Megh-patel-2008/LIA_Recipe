@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 /**
  * Write a description of class RecipeCollection here.
  *
@@ -12,7 +12,8 @@ public class Recipe_Book
     /**
      * Constructor for objects of class RecipeCollection
      */
-    public Recipe_Book()
+    public void Recipe_Book(String[] args)
     {
+        Scanner b = new Scanner(System.in);
     }
 }
