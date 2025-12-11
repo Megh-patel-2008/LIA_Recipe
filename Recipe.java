@@ -1,42 +1,29 @@
-import java.util.ArrayList;
+
 /**
- * Write a description of class Recipe_Book here.
+ * Write a description of class Recipe here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
 public class Recipe
 {
-    private String title = "Your Home Kitchen";
-    private ArrayList<String>ingredients = new ArrayList<>();
-    private ArrayList<String>steps = new ArrayList<>();
-    private int servings;
-    public Recipe(int servings)
+    private String recipeName;
+    private String cookTime;
+    private double[] ingredientAmounts;
+    private String[] ingredientNames;
+    public Recipe(String recipeName, String cookTime, double[] ingredientAmounts, String[] ingredientNames)
     {
-        this.servings = servings;
+        this.recipeName = recipeName;
+        this.cookTime = cookTime;
+        this.ingredientAmounts = ingredientAmounts;
+        this.ingredientNames = ingredientNames = ingredientNames;
     }
-    public void addIngredient(String ingredient)
+    public double getScaleAmount(int index, int people)
     {
-        ingredients.add(ingredient);
+        return ingredientAmounts[index] * people;
     }
-    public void addSteps(String step)
+    public void printRecipeForPeople(int people)
     {
-        steps.add(step);
-    }
-    public String getTitle()
-    {
-        return title;
-    }
-    public int getServings()
-    {
-        return servings;
-    }
-    public ArrayList<String> getIngredients()
-    {
-        return ingredients;
-    }
-    public ArrayList<String> getSteps()
-    {
-        return steps;
+        System.out.println("Recipe: " + recipeName);
     }
 }

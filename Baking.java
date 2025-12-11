@@ -6,16 +6,15 @@
  * @version (a version number or a date)
  */
 public class Baking extends Recipe
-
 {
-    private int ovenTemp;
+    private int ovenTemps;
     private int bakeTime;
     private boolean containsEgg;
-    
-    public Baking(int servings, int ovenTemp, int bakeTime, boolean containsEgg)
+    public Baking(String recipeName, String cookTime, double[] ingredientAmounts, String[] ingredientNames,
+                  int ovenTemps, int bakeTime, boolean containsEgg)
     {
-        super(servings);
-        this.ovenTemp = ovenTemp;
+        super(recipeName, cookTime, ingredientAmounts, ingredientNames);
+        this.ovenTemps = ovenTemps;
         this.bakeTime = bakeTime;
         this.containsEgg = containsEgg;
     }
